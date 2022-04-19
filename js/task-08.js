@@ -17,8 +17,8 @@ function onFormSubmit(event) {
     const formData = new FormData(event.currentTarget);
 
     formData.forEach((value, name) => {
-        console.log('onFormSubmit -> value', value);
-        console.log('onFormSubmit -> name', name);
+        console.log('value', value);
+        console.log('name', name);
 
    
 
@@ -26,3 +26,4 @@ function onFormSubmit(event) {
         
     })
 };
+/* onFormSubmit ->  */
