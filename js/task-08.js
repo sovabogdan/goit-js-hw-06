@@ -12,7 +12,7 @@ function onFormSubmit(event) {
          if (email.value=== '' || password.value === '') {
         alert('Вы не заполнили все поля');
     }
-    console.log(`Login: ${email.value}`);
+    console.log(`Email: ${email.value}`);
       console.log(`Password: ${password.value}`);
    
 
