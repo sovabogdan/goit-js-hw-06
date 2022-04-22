@@ -4,26 +4,18 @@ form.addEventListener('submit', onFormSubmit);
 
 function onFormSubmit(event) {
     event.preventDefault();
-
-    const formElements = event.currentTarget.elements;
-    const mail = formElements.email.value;
-    const password = formElements.password.value;
+    const {
+        elements: { email, password }
+        }= event.currentTarget;
     
-         if (mail=== '' || password === '') {
+    
+         if (email.value=== '' || password.value === '') {
         alert('Вы не заполнили все поля');
     }
-    
-
-    const formData = new FormData(event.currentTarget);
-
-    formData.forEach((value, name) => {
-        console.log('value', value);
-        console.log('name', name);
-
+    console.log(`Login: ${email.value}`);
+      console.log(`Password: ${password.value}`);
    
 
         form.reset();
         
-    })
 };
-/* onFormSubmit ->  */
